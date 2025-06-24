@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Municipios de Colombia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Municipios de Colombia</h1>
+
+  <div class="filters">
+    <label>Departamento:
+      <select id="departamento-select">
+        <option value="">Todos</option>
+      </select>
+    </label>
+
+    <label>Municipio:
+      <select id="municipio-select">
+        <option value="">Todos</option>
+      </select>
+    </label>
+
+    <label>Buscar:
+      <input type="text" id="busqueda-texto" placeholder="Escriba municipio o departamento...">
+    </label>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Región</th>
+        <th>Departamento</th>
+        <th>Código Dpto</th>
+        <th>Municipio</th>
+        <th>Código DANE Municipio</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-municipios"></tbody>
+  </table>
+
+  <script type="module" src="./js/controller.js"></script>
+</body>
+</html>

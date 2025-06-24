@@ -1,0 +1,87 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 30px;
+    background-color: #fffdf6; /* Agua de coco */
+    color: #3b3b3b;
+  }
+  
+  /* Título */
+  h1 {
+    text-align: center;
+    color: #f15a24; /* Papaya o mango */
+    margin-bottom: 30px;
+  }
+  
+  /* Contenedor de filtros */
+  .filters {
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #fff3e6; /* Fruta tropical suave */
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+  }
+  
+  .filters label {
+    font-weight: bold;
+    color: #6b4226; /* Marrón natural suave */
+  }
+  
+  /* Selects e inputs */
+  .filters select,
+  .filters input[type="text"] {
+    padding: 8px;
+    border: 1px solid #eab543; /* Amarillo tropical */
+    border-radius: 6px;
+    background-color: #fff9e6;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    font-size: 14px;
+    color: #3b3b3b;
+  }
+  
+  /* Tabla */
+  table {
+    width: 95%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Encabezados */
+  th {
+    background-color: #3dc2a9; /* Verde aguacate agua */
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+    font-size: 15px;
+  }
+  
+  /* Celdas */
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #f0e6da;
+    font-size: 14px;
+  }
+  
+  /* Hover fila */
+  tbody tr:hover {
+    background-color: #fef7e3; /* Luz tropical */
+  }
+  
+  /* Responsive */
+  @media screen and (max-width: 768px) {
+    .filters {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    table {
+      font-size: 13px;
+    }
+  }
